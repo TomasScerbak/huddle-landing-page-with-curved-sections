@@ -75,27 +75,23 @@ li {
 }
 /* Background Images */
 .bg-top-one {
-  display: flex;
   position: absolute;
   top: -20%;
   left: 0%;
 }
 .bg-bottom-one {
-  display: flex;
   position: absolute;
   bottom: -10%;
   left: 0%;
 }
 .bg-bottom-two {
-  display: flex;
   position: absolute;
   bottom: -20%;
   left: 0%;
 }
 .bg-footer-top {
-  display: flex;
   position: absolute;
-  top: -10%;
+  top: -7%;
   left: 0%;
 }
 @media screen and (min-width: 768px) {
@@ -294,6 +290,20 @@ section {
   color: hsl(322, 72%, 72%);
   border: 1px solid hsl(323, 45%, 76%);
 }
+.btn--small-secondary {
+  border-radius: 5px;
+  padding: 1.3rem 3.2rem;
+  background-color: var(--color-pink);
+  color: var(--very-pale-cyan);
+  margin-top: 1.5rem;
+}
+.btn--small-secondary:hover {
+  background-color: hsl(322, 72%, 72%);
+}
+.newsletter__button {
+  display: flex;
+  justify-content: flex-end;
+}
 @media screen and (min-width: 768px) {
   .btn--primary {
     width: 60%;
@@ -312,7 +322,7 @@ footer {
   background-color: var(--very-dark-cyan);
   color: var(--very-pale-cyan);
   margin-top: 10rem;
-  padding: 1.5rem;
+  padding: 2rem;
 }
 /* Footer Logo */
 .footer-logo {
@@ -340,9 +350,13 @@ footer {
   height: 1.5rem;
   margin-right: 1.5rem;
 }
+.newsletter__text {
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
   footer {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
     padding: 3rem;
@@ -357,9 +371,23 @@ footer {
   }
   .newsletter {
     flex: 1;
+    margin-right: 20rem;
+  }
+  .newsletter__heading {
+    margin-bottom: 0;
   }
   .company-info {
     flex: 1;
+    margin-right: 30rem;
+  }
+  form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .form__input {
+    margin-top: 0.8rem;
+    margin-right: 3rem;
   }
 }
 /* Media Icons */
@@ -369,7 +397,7 @@ footer {
 }
 .fab {
   border-radius: 5px;
-  margin: 1rem;
+  margin-right: 1rem;
   padding: 0.5rem;
   border: 0.5px solid #fff;
 }
@@ -388,5 +416,19 @@ footer {
   .attribution {
     position: absolute;
     bottom: 0;
+  }
+}
+/* Input */
+input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1.9rem 5rem;
+}
+@media screen and (min-width: 768px) {
+  input {
+    width: 35rem;
+    height: 5rem;
   }
 }
